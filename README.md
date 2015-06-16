@@ -4,7 +4,7 @@
 # confing Mysql
 ```php
 //run class
- new ConMysql("localhost","root","root","app");
+ new ConMysql("localhost","usersDB","passwordDB","yourDB");
 ```
 
 ## Author
