@@ -55,7 +55,7 @@ class ConMysql{
     private function Connect() {
 
         $sql =  @mysql_connect($this->dbhost,$this->dbuser,$this->dbpass);
-        if(!$sql) throw new errorsServerException("<pre class='preC' > Error => Not Connect !</pre>");
+        if(!$sql) throw new errorsServerException("<pre> Error => Not Connect !</pre>");
         else return true;
 
     }
@@ -68,7 +68,7 @@ class ConMysql{
     private function selectDb() {
 
         $sql = @mysql_select_db($this->db);
-        if(!$sql) throw new errorsServerException("<pre class='preC'> Error => NO DATABASE SELECTED !</pre>");
+        if(!$sql) throw new errorsServerException("<pre> Error => NO DATABASE SELECTED !</pre>");
         else return true;
 
     }
@@ -77,4 +77,4 @@ class ConMysql{
 
 }
 //run class
- new ConMysql("localhost","root","root","app");
+ new ConMysql("localhost","usersDB","passwordDB","yourDB");
